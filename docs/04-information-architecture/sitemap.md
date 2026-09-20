@@ -13,4 +13,4 @@
 - /house/
 - /conversation/
 
-Future production routes may include individual project, research, and essay pages once the content layer exists.
+Future production routes may include individual project, research, and essay pages.
