@@ -161,7 +161,7 @@ export default function App() {
   useEffect(() => {
     const steps = [...document.querySelectorAll<HTMLElement>(".step")];
     const observer = new IntersectionObserver(
-      (entries) => entries.forEach((entry) => entry.isIntersecting && setStageIndex(Number(entry.target.dataset.stage ?? 0))),
+      (entries) => entries.forEach((entry) => entry.isIntersecting && setStageIndex(Number((entry.target as HTMLElement).dataset.stage ?? 0))),
       { rootMargin: "-35% 0px -45% 0px" }
     );
     steps.forEach((step) => observer.observe(step));
