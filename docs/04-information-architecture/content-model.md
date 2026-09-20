@@ -1,68 +1,16 @@
 # Content Model
 
 ## Project
-
-Fields:
-
-- title
-- location
-- project type
-- client status
-- ambition
-- context
-- method stages
-- disciplines
-- intervention
-- evidence
-- outcomes
-- imagery
-- 3D assets
-- related thinking
-- fictional/verified status
+title, location, project type, client status, ambition, context, method stages, disciplines, intervention, evidence, outcomes, imagery, 3D assets, related thinking, fictional/verified status.
 
 ## Thinking
+title, type, excerpt, body, author, topic, place, related projects, publication status.
 
-Fields:
-
-- title
-- type
-- excerpt
-- body
-- author
-- topic
-- place
-- related projects
-- publication status
-
-## Method stage
-
-Fields:
-
-- name
-- order
-- description
-- questions
-- outputs
-- related projects
-- visual state
+## Method Stage
+name, order, description, questions, outputs, related projects, visual state.
 
 ## Person
+name, role, biography, disciplines, portrait, verification status.
 
-Fields:
-
-- name
-- role
-- biography
-- disciplines
-- portrait
-- verification status
-
-## Conversation route
-
-Fields:
-
-- label
-- intent
-- questions
-- required information
-- routing destination
+## Conversation Route
+label, intent, questions, required information, routing destination.
