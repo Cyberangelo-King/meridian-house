@@ -245,6 +245,40 @@ export default function App() {
           <div><p className="overline">A DIFFERENT STARTING POINT</p><h2>A city is not infrastructure.<br /><em>It is behaviour at scale.</em></h2><p>Every project sits inside a larger system of movement, capital, culture, technology, memory and human behaviour. We study those relationships before deciding what to change.</p></div>
         </section>
 
+        <section className="story section-rule" aria-labelledby="story-title">
+          <div className="story-rail" aria-hidden="true">
+            <span className="kicker">THE MERIDIAN IDEA</span>
+            <div className="story-line"><i /></div>
+            <span>02 → 04</span>
+          </div>
+          <div className="story-scenes">
+            <article className="story-scene scene-place">
+              <span className="scene-index">01 / PLACE</span>
+              <h2 id="story-title">Every project<br /><em>starts somewhere.</em></h2>
+              <p>A street. A shoreline. A district. A piece of land. But the visible place is only the surface.</p>
+              <div className="scene-mark mark-orbit" aria-hidden="true"><i /><b /></div>
+            </article>
+            <article className="story-scene scene-system">
+              <span className="scene-index">02 / SYSTEM</span>
+              <h2>Underneath it,<br /><em>everything is moving.</em></h2>
+              <p>People move. Water moves. Money moves. Information moves. Memory moves. The project enters that motion.</p>
+              <div className="scene-mark mark-grid" aria-hidden="true"><i /><i /><i /><i /><b /></div>
+            </article>
+            <article className="story-scene scene-question">
+              <span className="scene-index">03 / QUESTION</span>
+              <h2>So we ask<br /><em>what is really happening?</em></h2>
+              <p>Before form, there is observation. Before certainty, there is evidence. Before an answer, there is a better question.</p>
+              <div className="scene-mark mark-cross" aria-hidden="true"><i /><b /></div>
+            </article>
+            <article className="story-scene scene-intervention">
+              <span className="scene-index">04 / INTERVENTION</span>
+              <h2>Then we decide<br /><em>what should change.</em></h2>
+              <p>Architecture, strategy, research and intelligence become tools for making the system more legible and the next decision more precise.</p>
+              <div className="scene-mark mark-field" aria-hidden="true"><i /><b /><small>OBSERVE AGAIN</small></div>
+            </article>
+          </div>
+        </section>
+
         <section id="layers" className="layers section-rule">
           <div className="layers-copy">
             <div className="section-meta"><p className="kicker">READ THE CITY</p><span>02</span></div>
@@ -263,11 +297,17 @@ export default function App() {
           </div>
         </section>
 
+        <section className="manifesto section-rule" aria-label="Meridian House proposition">
+          <p className="manifesto-small">WE DO NOT BEGIN WITH THE BUILDING.</p>
+          <div className="manifesto-word" aria-hidden="true"><span>PLACE</span><span>SYSTEM</span><span>QUESTION</span><span>DECISION</span></div>
+          <p className="manifesto-copy">We begin with the relationships that make the building, district or intervention matter.</p>
+        </section>
+
         <section id="method" className="method section-rule">
           <div className="sticky">
             <div className="section-meta"><p className="kicker">HOW WE THINK</p><span>03</span></div>
             <h2>Method is not a sequence.<br /><em>It is a loop.</em></h2>
-            <div className="stage" aria-live="polite"><span className="stage-no">{String(stageIndex + 1).padStart(2, "0")}</span><strong>{stages[stageIndex][0]}</strong><p>{stages[stageIndex][1]}</p></div>
+            <div className="stage" aria-live="polite"><span className="stage-no">{String(stageIndex + 1).padStart(2, "0")}</span><strong>{stages[stageIndex][0]}</strong><p>{stages[stageIndex][1]}</p><div className="stage-progress" aria-hidden="true"><i style={{ width: ((stageIndex + 1) / stages.length) * 100 + "%" }} /></div></div>
             <p className="loop-note">The final step returns to the first.</p>
           </div>
           <div className="steps" aria-label="Meridian House method">
